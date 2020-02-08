@@ -1,0 +1,100 @@
+import java.awt.*; 
+import java.awt.event.*; 
+import javax.swing.*; 
+ 
+public class practicados extends JFrame
+
+ {   
+ private JButton botonSimple1;
+ 
+ 	 public practicados()   
+ 	 	 {
+ 	               
+ 	  JFrame ven = new JFrame("Primera practica ");
+ 	  ven.setLayout(null);              
+ 	  	ven.setBounds(5,10,700,600);               
+ 	   ven.setVisible(true);    
+        
+      botonSimple1 = new JButton( "mensaje" );  
+      ven.add( botonSimple1 );       
+      botonSimple1.setBounds(150,250,400,100);      
+     
+              
+      JLabel nombre= new JLabel();   
+     ven.add(nombre);   
+     nombre.setBounds(190,0,500,200);   
+    nombre.setFont(new Font("Arial",Font.BOLD,20));   
+     nombre.setForeground(Color.BLUE);   
+     nombre.setText("Jorge Armando Castrejon Revillas");
+     
+     JLabel carrera= new JLabel();   
+     ven.add(carrera);   
+     carrera.setBounds(170,35,500,200);   
+     carrera.setFont(new Font("Arial",Font.BOLD,20));   
+     carrera.setForeground(Color.BLUE);   
+     carrera.setText("Ingenieria en Sistemas Computacionales"); 
+      
+     JLabel control= new JLabel();   
+     ven.add(control);   
+     control.setBounds(300,80,500,200);   
+     control.setFont(new Font("Arial",Font.BOLD,20));   
+     control.setForeground(Color.BLUE);   
+     control.setText("171160140");      
+    
+         
+    ManejadorBoton manejador = new ManejadorBoton();       
+    botonSimple1.addActionListener( manejador );                   
+      	
+      	
+          }  
+         
+         
+          
+ 
+   public static void main( String args[] )    {  
+ 
+ 
+      practicados aplicacion = new practicados();    }
+       
+       private class ManejadorBoton implements ActionListener  
+       	
+       	 {     
+        	
+        public void actionPerformed( ActionEvent evento )      
+        	 {
+                         
+        JFrame vdos = new JFrame("practica uno ");
+    	vdos.setLayout(null);              
+ 	    vdos.setBounds(690,10,700,600);               
+ 	    vdos.setVisible(true);  
+ 	    	
+ 	    JLabel direc= new JLabel();   
+     vdos.add(direc);   
+     direc.setBounds(200,0,500,200);   
+     direc.setFont(new Font("Arial",Font.BOLD,20));   
+     direc.setForeground(Color.BLUE);   
+     direc.setText("San Pedro Pochutla Oaxaca");
+     
+     JLabel telefono= new JLabel();   
+     vdos.add(telefono);   
+     telefono.setBounds(200,35,500,200);   
+     telefono.setFont(new Font("Arial",Font.BOLD,20));   
+     telefono.setForeground(Color.BLUE);   
+     telefono.setText("9581198915"); 
+      
+     JLabel genero= new JLabel();   
+     vdos.add(genero);   
+     genero.setBounds(200,75,500,200);   
+     genero.setFont(new Font("Arial",Font.BOLD,20));   
+     genero.setForeground(Color.BLUE);   
+     genero.setText("Hombre");     
+ 	    	
+         	 } 
+ 
+         } 
+         	
+       
+         	
+ 
+ 
+         } 
